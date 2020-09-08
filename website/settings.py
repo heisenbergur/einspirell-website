@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ic^xjgg!b6jrylrs#0l^1)e_5!x8h2gxxz00^=ta%&@f=!4fqb'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['148.66.137.25', 'einspirell.co.in']
 
 
 # Application definition
@@ -128,3 +128,19 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
+
+SECURE_CONTENT_TYPE_NOSNIFF = True
+
+SECURE_HSTS_SECONDS = 31536000
+
+SECURE_HSTS_PRELOAD = True
+
+SESSION_COOKIE_SECURE = True
+
+SECURE_SSL_REDIRECT = True
+
+SECURE_BROWSER_XSS_FILTER = True
+
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+
+CSRF_COOKIE_SECURE = True
