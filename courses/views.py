@@ -12,4 +12,9 @@ def Corporate(request):
 def Courses(request):
 	return render(request, 'courses/Courses.html')
 
+def Housewives(request):
+	return render(request, 'courses/Housewives.html')
+
+def Interview(request):
+	return render(request, 'courses/Interview.html')
 
