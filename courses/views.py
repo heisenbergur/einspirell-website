@@ -18,3 +18,9 @@ def Housewives(request):
 def Interview(request):
 	return render(request, 'courses/Interview.html')
 
+def SM(request):
+	return render(request, 'courses/SM.html')
+
+def Coding(request):
+	return render(request, 'courses/Coding.html')
+
