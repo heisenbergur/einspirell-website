@@ -11,4 +11,5 @@ urlpatterns = [
     path('Demo/',people.views.Demo, name='Demo'),
     path('courses/', include('courses.urls')),
     path('contact/',people.views.contact, name='contact'),
+    path('culture/',people.views.culture, name='culture'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

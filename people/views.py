@@ -21,3 +21,6 @@ def contact(request):
 
 def Demo(request):
 	return render(request,'people/Demo.html')
+
+def culture(request):
+	return render(request,'people/culture.html')
